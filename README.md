@@ -17,7 +17,7 @@
 
 ## 1. Introducción
 
-El objetivo de este trabajo práctico es desarrollar una Unidad Aritmético-Lógica (ALU) utilizando una FPGA Basys 3. La ALU está diseñada para realizar operaciones aritméticas y lógicas básicas. Para controlar y observar su funcionamiento, se han asignado botones, switches y LEDs de la Basys 3 como entradas y salidas del sistema.
+El objetivo de este trabajo práctico es desarrollar una Unidad Aritmético-Lógica (ALU) utilizando una FPGA Basys 3. La ALU está diseñada para realizar operaciones aritméticas y lógicas básicas, con operandos y opcode parametrizables en longitud, lo que permite adaptar fácilmente el diseño a distintas necesidades de ancho de datos. Para controlar y observar su funcionamiento, se han asignado botones, switches y LEDs de la Basys 3 como entradas y salidas del sistema.
 
 El proyecto incluye tres módulos principales:
 - `top`: Módulo principal que conecta los periféricos de la FPGA a la ALU.
@@ -134,5 +134,5 @@ En el archivo de constraints se define la configuración de los pines y la seña
 
 ## 4. Conclusión
 
-Este proyecto implementa una ALU funcional en una FPGA Basys 3, capaz de realizar operaciones aritméticas y lógicas con operandos de 6 bits y una salida de 7 bits para manejar posibles overflow. Las pruebas realizadas con el testbench `tb_alu` confirman que la ALU responde correctamente a cada operación bajo condiciones simuladas. La implementación de constraints asegura una correcta asignación de los periféricos
+Este proyecto implementa una ALU funcional y parametrizable en una FPGA Basys 3, capaz de realizar operaciones aritméticas y lógicas sin estar limitada a un tamaño específico de operandos o de opcode. En nuestro caso, definimos operandos de 6 bits y una salida de 7 bits para manejar posibles overflow, pero el diseño permite ajustar estos tamaños según sea necesario. Las pruebas realizadas con el testbench tb_alu confirman que la ALU responde correctamente a cada operación bajo condiciones simuladas. La implementación de constraints asegura una correcta asignación de los periféricos.
 
