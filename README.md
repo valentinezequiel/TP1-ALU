@@ -1,5 +1,3 @@
----
-
 **Universidad Nacional de Córdoba**
 **Facultad de Ciencias Exactas, Físicas y Naturales**
 
