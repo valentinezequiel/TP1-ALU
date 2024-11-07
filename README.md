@@ -51,7 +51,7 @@ En el archivo de constraints se define la configuración de los pines y la seña
   set_property -dict { PACKAGE_PIN U14 IOSTANDARD LVCMOS33 } [get_ports { o_led[6] }];
   ```
 - **Descripción:**
-  Configura los pines de los LEDs `o_led[0]` a `o_led[6]` para mostrar el resultado de la ALU. Los LEDs restantes están comentados y no se usan en esta implementación.
+  Configura los pines de los LEDs `o_led[0]` a `o_led[6]` para mostrar el resultado de la ALU.
 
 ### 2.3. Buttons
 - **Constraints utilizados:**
